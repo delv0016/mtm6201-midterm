@@ -1,0 +1,71 @@
+/*General style for mobile*/
+
+html , body {
+    background-color: white;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+}
+
+/*Nav bar: logo, nav panel, search icon*/
+.nav-bar {
+    background-color: #F3F7F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.nav-list li {
+    list-style-type: none;
+    font-size: larger;
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #A93F55;
+}
+
+.top-logo img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.search form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+    
+}
+
+/*Main banner*/
+
+.main-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(./../images/coffeshop.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+
