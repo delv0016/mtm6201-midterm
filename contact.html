@@ -46,45 +46,25 @@
         </header>
 
         <main role="main">
-            <!--Banner: Img background, button see more-->
-            <div class="main-banner">
-                <div class="banner-wrapper">
-                    <div class="banner-title">
-                        <h1>New season, new drinks!</h1>
-                    </div>
-                    <a class="banner-button" href="connect"><p>See More</p></a>
+            <div class="contact-wrapper">
+                <div class="contact-title">Contact Us</div>
+                <div class="contact-form">
+                    <form action="contact.html" method="post">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" required>
+        
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="phone" name="phone" required>
+
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required>
+        
+                        <label for="message">Message</label>
+                        <textarea id="message" type="text" name="message" required></textarea>
+        
+                        <button type="submit" value="submit">Send</button>
+                    </form>
                 </div>
-            </div>
-
-            <!--Content: products images-->
-            <div class="collection-content">
-                <section>
-                    <h2>Discover our catalogue</h2>
-                    <div class="collection-links">
-                        <div class="collection-item">
-                            <img src="images/shop1.png" alt="shop1">
-                            <a href="#">Shop</a>
-                        </div>
-                        <div class="collection-item">
-                            <img src="images/shop1.png" alt="shop1">
-                            <a href="#">Drinks</a>
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>Spring Collection</h2>
-                    <div class="collection-links">
-                        <div class="collection-item">
-                            <img src="images/shop1.png" alt="shop1">
-                            <a href="#">Shop</a>
-                        </div>
-                        <div class="collection-item">
-                            <img src="images/shop1.png" alt="shop1">
-                            <a href="#">Drinks</a>
-                        </div>
-                    </div>
-                </section>
             </div>
         </main>
 
