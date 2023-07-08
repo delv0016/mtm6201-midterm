@@ -30,12 +30,23 @@ html , body {
     font-size: larger;
     text-align: center;
     width: 100%;
-    padding: 15px;
+    padding: 0.75rem;
 }
 
 .nav-list li a{
     text-decoration: none;
-    color: #A93F55;
+    color: #A93F55; 
+    width: 100%;
+}
+
+/*Animation nav: hover*/
+.nav-list ul li a{
+    transition: background-color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #F3F7F0;
+    background-color: #A93F55;
 }
 
 .top-logo img{
@@ -74,19 +85,24 @@ html , body {
     width: 100%;
     max-width: 400px;
     background-color: rgba(0, 0, 0, 0.75);
-    font-size: 1.5rem;
-    
+}
+.banner-title {
+    font-size: 2rem;
+    color: #F3F7F0;
+    margin: 20px;
 }
 
 .banner-button {
     text-decoration: none;
     color: #F3F7F0;
-
 }
 
 .banner-button p{
     border: #F2545B;
     background-color: #F2545B;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px
 }
 
 
@@ -108,6 +124,8 @@ html , body {
 
 .collection-content h2 {
     align-self: center;
+    color: #A93F55;
+    font-size: 35px;
 }
 
 .collection-links {
@@ -126,6 +144,12 @@ html , body {
     align-items: center;
 }
 
+.collection-item a{
+    font-size: larger;
+    color: #19323C;
+    text-decoration: none;
+    margin: 15px;
+}
 /* footer */
 
 footer {
@@ -143,6 +167,13 @@ footer {
     align-items: flex-start;
 }
 
+.footer-links a{
+    color: #F3F7F0;
+    text-decoration: none;
+    font-size: larger;
+    margin: 15px;
+}
+
 .footer-logos {
     display: flex;
     flex-direction: column;
@@ -157,14 +188,17 @@ footer {
 
 .social-icons {
     display: flex;
-    margin-top: 20px;
     justify-content: space-evenly;
     align-content: center;
     width: 100%;
     max-width: 50%;
-    margin-top: 10px;
+    margin: 20px;
+    color: #19323C;
 }
 
+.copyright {
+    margin: 10px;
+}
 /* about us */
 .about-us-wrapper {
     margin: 0 20px;
@@ -175,6 +209,9 @@ footer {
 
 .about-us-title {
     align-self: flex-start;
+    color: #A93F55;
+    font-size: 2rem;
+    margin: 30px;
 }
 
 .about-us-image img{
@@ -200,12 +237,16 @@ footer {
 }
 .contact-title {
     align-self: flex-start;
+    color: #A93F55;
+    font-size: 2rem;
+    margin: 30px;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    font-size: larger
 }
 .contact-form form{
     display: flex;
@@ -218,11 +259,15 @@ footer {
 }
 
 .contact-form button{
-    background-color: black;
-    color: #c78c06;
-    width: 20%; 
-    margin-top: 20px;
+    background-color: #F2545B;
+    color: #F3F7F0;
+    width: 20%;
+    margin: 20px 0px;
     align-self: flex-end;
+    border: #F2545B;
+    font-size: 1rem;
+    border-radius: 9px;
+    padding: 5px 20px 5px 20px;
 }
 textarea {
     height: 150px;

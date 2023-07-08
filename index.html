@@ -16,15 +16,15 @@
 <body>
     <div class="wrapper">
         <!--Nav: logo, nav panel, search icon-->
-        <header>
-            <div class="nav-bar" role="navigation">
+        <header role="banner">
+            <nav class="nav-bar" role="navigation">
                 <div class="top-logo">
                     <a href="index.html">
                         <img src="images/Luckyfind_logo.png" alt="Lucky find logo">
                     </a>
                 </div>
 
-                <nav class="nav-list">
+                <div class="nav-list">
                     <ul>
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">Drinks</a></li>
@@ -32,9 +32,9 @@
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="#">Suscription</a></li>
                     </ul>
-                </nav>
+                </div>
 
-                <div class="search">
+                <div class="search" role="search">
                     <form action="search.html" method="get">
                         <div class="search-icon">
                             <label for="search"></label><i class="fa-sharp fa-solid fa-magnifying-glass"></i>
@@ -42,7 +42,7 @@
                         <input id="search" type="text" name="search" placeholder="Search">
                     </form>
                 </div>
-            </div>
+            </nav>
         </header>
 
         <main role="main">
@@ -52,8 +52,8 @@
                     <div class="banner-title">
                         <h1>New season, new drinks!</h1>
                     </div>
-                    <a class="banner-button" href="connect"><p>See More</p></a>
                 </div>
+                <a class="banner-button" href="connect"><p>See More</p></a>
             </div>
 
             <!--Content: products images-->
@@ -66,7 +66,7 @@
                             <a href="#">Shop</a>
                         </div>
                         <div class="collection-item">
-                            <img src="images/shop1.png" alt="shop1">
+                            <img src="images/drinks.png" alt="drinks">
                             <a href="#">Drinks</a>
                         </div>
                     </div>
@@ -76,19 +76,19 @@
                     <h2>Spring Collection</h2>
                     <div class="collection-links">
                         <div class="collection-item">
-                            <img src="images/shop1.png" alt="shop1">
-                            <a href="#">Shop</a>
+                            <img src="images/garden-tea.png" alt="products">
+                            <a href="#">Garden Tea Set</a>
                         </div>
                         <div class="collection-item">
-                            <img src="images/shop1.png" alt="shop1">
-                            <a href="#">Drinks</a>
+                            <img src="images/cup.png" alt="products">
+                            <a href="#">Pottery Tea Cup</a>
                         </div>
                     </div>
                 </section>
             </div>
         </main>
 
-        <footer>
+        <footer role="contentinfo">
             <!--Footer: Links list, logo, social icons-->
             <div class="footer-wrapper">
                 <div class="footer-links">
@@ -110,7 +110,9 @@
                             <a href="#"><i class="fab fa-instagram fa-2xl"></i></a>
                         </div>
                     
-                        <h3>copy copy</h3>
+                        <div class="copyright">
+                            &#169; Copyright 2023 Lucky Find Coffee. All rights reserved. <a href="#top">Back to Top</a></footer>
+                        </div>
                 </div>
             </div>
         </footer>
