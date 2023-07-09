@@ -40,13 +40,16 @@ html , body {
 }
 
 /*Animation nav: hover*/
-.nav-list ul li a{
-    transition: background-color 0.3s;
+.nav-list ul li{
+    transition: background-color 0.4s;
 }
 
-.nav-list li a:hover {
-    color: #F3F7F0;
+.nav-list li:hover {
     background-color: #A93F55;
+}
+
+.nav-list li:hover a{
+    color: #F3F7F0;
 }
 
 .top-logo img{
@@ -122,6 +125,10 @@ html , body {
     width: 100%;
 }
 
+.collection-content section:nth-child(2){
+    padding-bottom: 50px;
+}
+
 .collection-content h2 {
     align-self: center;
     color: #A93F55;
@@ -162,6 +169,7 @@ footer {
 }
 
 .footer-links {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -211,7 +219,7 @@ footer {
     align-self: flex-start;
     color: #A93F55;
     font-size: 2rem;
-    margin: 30px;
+    margin: 30px 0;
 }
 
 .about-us-image img{
@@ -221,8 +229,10 @@ footer {
 }
 
 .about-us-content {
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
+    font-size: large;
 }
 
 .about-us-content a {
@@ -239,7 +249,7 @@ footer {
     align-self: flex-start;
     color: #A93F55;
     font-size: 2rem;
-    margin: 30px;
+    margin: 30px 0;
 }
 
 .contact-form {
@@ -251,8 +261,8 @@ footer {
 .contact-form form{
     display: flex;
     flex-direction: column;
-
 }
+
 .contact-form label {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -273,3 +283,36 @@ textarea {
     height: 150px;
 }
 
+@media screen and (min-width:600px) {
+    .contact-form form {  
+        display: grid;
+        grid-template-columns: 0.3fr 1.3fr 1.4fr 1fr;
+        grid-template-rows: repeat(4, 0.5fr);
+        gap: 10px 20px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "name input-name message message"
+          "phone input-phone input-message input-message"
+          "email input-email input-message input-message"
+          "send send send send";
+        }
+    
+    #name { grid-area: name; }
+    
+    #input-name { grid-area: input-name; }
+    
+    #phone { grid-area: phone; }
+    
+    #input-phone { grid-area: input-phone; }
+    
+    #email { grid-area: email; }
+    
+    #input-email { grid-area: input-email; }
+    
+    .contact-form form button { grid-area: send; }
+    
+    #message { grid-area: message; }
+    
+    #input-message { grid-area: input-message; }
+
+}
