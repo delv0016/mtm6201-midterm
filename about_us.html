@@ -51,7 +51,14 @@
                     About Us
                 </div>
                 <div class="about-us-image">
-                    <img src="images/about-us-image.png" alt="about us image"/>
+                    <img
+                    srcset="images/about-us@0.5x.png 320w,
+                    images/about-us.png 480w"
+                    sizes="(max-width: 320px) 320px,
+                        (max-width: 480px) 480px"
+                    src="images/about-us.png" 
+                    alt="about us image"
+                    />
                 </div>
                 <div class="about-us-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in auctor leo. Pellentesque urna nulla, sodales sed diam ut, iaculis luctus orci. Cras pretium ligula tempor purus mattis, accumsan commodo enim imperdiet. Suspendisse potenti. Phasellus tempor laoreet dolor, eget blandit ipsum pretium ac. Phasellus lobortis eros leo, ac finibus tellus dapibus ac. Suspendisse aliquam ipsum eget lacinia pretium. Sed auctor risus eget eleifend semper. Vivamus eu luctus diam. Proin quis elit vel neque finibus sollicitudin. Maecenas scelerisque diam eget sagittis malesuada. In maximus odio quis purus molestie efficitur. Nunc accumsan ultrices nibh, eget pulvinar est facilisis id.
@@ -64,11 +71,26 @@
         <footer role="contentinfo">
             <!--Footer: Links list, logo, social icons-->
             <div class="footer-wrapper">
-                <div class="footer-links">
-                    <a href="#">About Us</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Find Our Store</a>
+                <div class="footer-content">
+                    <div class="footer-block">
+                        <h3>Pages</h3>
+                        <div class="footer-links">
+                            <a href="#">About Us</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Find Our Store</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-block">
+                        <h3>Info</h3>
+                        <ul class="footer-contact-info" itemscope itemtype="http://schema.org/LocalBusiness">
+                            <li itemprop="legalName">Lucky Find</li>
+                            <li itemprop="address">123 Main Street, Ottawa</li>
+                            <li itemprop="telephone">(613) 111-2222</li>
+                            <li itemprop="email">info@luckyfind.ca</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="footer-logos">
