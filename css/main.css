@@ -10,7 +10,7 @@ html , body {
     max-width: 100%;
 }
 
-/*Nav bar: logo, nav panel, search icon*/
+/*Nav bar: flex column, center*/
 .nav-bar {
     background-color: #F3F7F0;
     display: flex;
@@ -39,19 +39,6 @@ html , body {
     width: 100%;
 }
 
-/*Animation nav: hover*/
-.nav-list ul li{
-    transition: background-color 0.4s;
-}
-
-.nav-list li:hover {
-    background-color: #A93F55;
-}
-
-.nav-list li:hover a{
-    color: #F3F7F0;
-}
-
 .top-logo img{
     width: 100%;
     max-width: 150px;
@@ -65,10 +52,13 @@ html , body {
     align-items: center;
     width: 100%;
     padding: 10px 10px;
-    
 }
 
-/*Main banner*/
+.fa-sharp {
+    color:#19323C;
+}
+
+/*Main banner: background img, flex column, title, button*/
 
 .main-banner {
     display: flex;
@@ -109,7 +99,7 @@ html , body {
 }
 
 
-/* Collection content */
+/* Collection content: flex wrap column */
 .collection-content {
     width: 100%;
     display: flex;
@@ -163,8 +153,8 @@ html , body {
     text-decoration: none;
     margin: 15px;
 }
-/* footer */
 
+/* footer: flex column, links-info flex row*/
 footer {
     width: 100%;
     background-color: #A93F55;
@@ -240,10 +230,16 @@ footer {
     color: #19323C;
 }
 
+.fab {
+    color:#19323C;
+}
+
 .copyright {
     margin: 10px;
+    color:#19323C;
 }
-/* about us */
+
+/* about us: content flex column */
 .about-us-wrapper {
     margin: 0 20px;
     display: flex;
@@ -274,7 +270,8 @@ footer {
 .about-us-content a {
     align-self: flex-end;
 }
-/* contact us */
+
+/* contact us: form, flex column, button*/
 .contact-wrapper {
     display: flex;
     flex-direction: column;
@@ -319,6 +316,7 @@ textarea {
     height: 150px;
 }
 
+/*Media query contact form grid*/
 @media screen and (min-width:600px) {
     .contact-form form {  
         display: grid;
@@ -335,32 +333,45 @@ textarea {
     
     #name { grid-area: name; }
     
-    #input-name { grid-area: input-name; }
+    #name-input { grid-area: input-name; }
     
     #phone { grid-area: phone; }
     
-    #input-phone { grid-area: input-phone; }
+    #phone-input { grid-area: input-phone; }
     
     #email { grid-area: email; }
     
-    #input-email { grid-area: input-email; }
+    #email-input { grid-area: input-email; }
     
     .contact-form form button { grid-area: send; justify-self: end;}
     
     #message { grid-area: message; }
     
-    #input-message { grid-area: input-message; }
+    #message-input { grid-area: input-message; }
 
 }
 
+/*Media query footer content*/
 @media screen and (max-width: 430px) {
     .footer-content {
         justify-content: flex-start;
     }    
 }
 
-/* Animation */
+/*Animation nav: transition backg-colour hover*/
+.nav-list ul li{
+    transition: background-color 0.4s;
+}
 
+.nav-list li:hover {
+    background-color: #A93F55;
+}
+
+.nav-list li:hover a{
+    color: #F3F7F0;
+}
+
+/* Animation bottom logo: vibrate hover*/
 .bottom-logo:hover{
     animation: vibrate;
     animation-duration: 1s;
@@ -375,3 +386,4 @@ textarea {
         transform: translate3d(5px, 0, 0);
     }
 }
+
